@@ -14,3 +14,107 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+  align-content: center;
+  overflow-x: hidden;
+}
+.arrowRight {
+  position: absolute;
+  top: 45%;
+  right: 32px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 45%;
+  left: 32px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.arrowLeft:hover{
+  filter: invert(1);
+}
+
+.arrowRight:hover{
+  filter: invert(1);
+}
+
+.Slider {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  z-index: 1;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+ /* Slide */
+.slide {
+  transform: translateX(+100%);
+  transition-duration: 1s ease;
+  position: relative;
+}
+
+.slide.active {
+  transform: translateX(0);
+
+  transition-duration:1s ;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.slide h2 {
+  color: white;
+  position: absolute;
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  top: .5rem;
+  left: 9rem;
+  letter-spacing: 4px;
+  opacity: 80%;
+}
+
+.slide p {
+  color: white;
+  position: absolute;
+  right: 6rem;
+  top: 3rem;
+  width: 300px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: right;
+}
+.slide button {
+  border: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 9rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 2px solid aqua;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  opacity: 80%;
+  letter-spacing: 2px;
+}
