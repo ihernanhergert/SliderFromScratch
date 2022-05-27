@@ -15,7 +15,7 @@ const Slider = ({ slides }) => {
       nextSlide();
     }, 3000);
     return () => clearInterval(interval);
-  }, [current]);
+  });
   
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
