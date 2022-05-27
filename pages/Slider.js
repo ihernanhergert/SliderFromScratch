@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import arrowRight from "../public/rightArrow.svg";
 import Image from "next/image";
-import { SliderData } from "./SliderData";
+import { SliderData } from "../components/SliderData";
 import arrowLeft from '../public/leftArrow.svg'
 
 
@@ -33,11 +33,11 @@ const Slider = ({ slides }) => {
     <section className="Slider">
       <div className="arrows">
         <div className="arrowLeft" onClick={prevSlide}>
-          <Image src={arrowLeft} height={"50px"} width={"50px"}/>
+          <Image src={arrowLeft} height={"50px"} width={"50px"} alt="arrowLeft"/>
         </div>
 
         <div className="arrowRight" onClick={nextSlide}>
-          <Image src={arrowRight} height={"50px"} width={"50px"} />
+          <Image src={arrowRight} height={"50px"} width={"50px"} alt="arrowRight"/>
         </div>
       </div>
       {SliderData.map((slide, index) => {
