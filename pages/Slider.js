@@ -16,6 +16,7 @@ const Slider = ({ slides }) => {
     }, 3000);
     return () => clearInterval(interval);
   });
+
   
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -48,11 +49,12 @@ const Slider = ({ slides }) => {
           >
             {index === current && (
               <>
-                <img
+                <Image
                   src={slide.image}
-                  alt="afsjfh"
+                  alt={slide.image}
                   index={index}
                   className="image"
+                  layout="fill"
                 />
                 <h2>{slide.title}</h2>
                 <p>{slide.desc}</p>
