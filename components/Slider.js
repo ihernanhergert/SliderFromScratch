@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import arrowRight from "../public/rightArrow.svg";
 import Image from "next/image";
-import { SliderData } from "../components/SliderData";
+import { SliderData } from "./SliderData";
 import arrowLeft from '../public/leftArrow.svg'
 
 

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Slider from './Slider'
+import Slider from '../components/Slider'
 import { SliderData } from '../components/SliderData'
 
 export default function Home() {
